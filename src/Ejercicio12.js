@@ -24,3 +24,4 @@ function ejercicio12() {
     `${grados_f} grados fahrenheit convertidos en grados celsius es: ${celsius}`
   );
 } 
+ejercicio12()
