@@ -3,7 +3,7 @@ el profesor aplico una ayuda de un 5% al total de las notas y lo sumo al promedi
 Debera mostrar el nombre del estudiante, las tres notas y el promedio con un mensaje de aprobado o reprobado. 
 Un estudiante aprueba si su nota promedio es superior o igual que a 70, de lo contrario es reprobado. */
 const read = require("prompt-sync")();
-//Pedimos el nombre del usuario
+/*Pedimos el nombre del usuario
 const nombre_estudiante = read("Ingresar nonbre de estudiante: ");
 //Pedimos sus 3 notas
 const nota_1s = read("Ingresar nota 1: ");
@@ -31,3 +31,28 @@ if (promedio_final >= 70) {
 } else {
   console.log("Usted ha reprobado con:", promedio_final);
 }
+*/ 
+//1)Ejercicio 1
+let cadena = read('Ingresar caracter:');
+for(let i = 0; i < cadena.length; i++){
+  console.log(cadena[i]);
+}  
+
+//2)Ejercicio 2 
+/* let cadena = read('Ingresar caracter:');
+//cadena = cadena.toLocaleLowerCase();
+//console.log(cadena);
+contador = 0;
+let vocalesEncontradas = [];
+
+for(let i = 0; i < cadena.length; i++){
+  let caracter = cadena[i];
+  if ('aeiouAEIOU'.includes(caracter)) {
+    vocalesEncontradas.push(caracter);
+    contador++;
+
+  }
+}
+console.log(`Vocales encontradas: ${vocalesEncontradas.join(',')}`);
+console.log(`Y contiene ${contador} vocales`); 
+ */
