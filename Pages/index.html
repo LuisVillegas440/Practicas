@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Emisión de Boletos</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Emisión de Boletos del Metro de Quito</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'start')">Empezar</button>
+            <button class="tablinks" onclick="openTab(event, 'destino')">Destino</button>
+            <button class="tablinks" onclick="openTab(event, 'tarjetaCredito')">Tarjeta de Crédito</button>
+            <button class="tablinks" onclick="openTab(event, 'idPersonal')">Identificador Personal</button>
+            <button class="tablinks" onclick="openTab(event, 'resultado')">Resultado</button>
+        </div>
+
+        <div id="start" class="tabcontent">
+            <button id="startButton">Buscar destino</button>
+        </div>
+
+        <div id="destino" class="tabcontent">
+            <label for="destinoSelect">Seleccione su destino:</label>
+            <select id="destinoSelect">
+                <option value="Estación 1">Jipijapa</option>
+                <option value="Estación 2">La Pradera</option>
+                <option value="Estación 3">El Ejido</option>
+            </select>
+            <button id="nextToTarjetaCredito">Siguiente</button>
+        </div>
+
+        <div id="tarjetaCredito" class="tabcontent">
+            <label for="tarjetaCreditoInput">Ingrese su número de tarjeta de crédito:</label>
+            <input type="text" id="tarjetaCreditoInput" placeholder="Número de tarjeta">
+            <button id="nextToIdPersonal">Siguiente</button>
+        </div>
+
+        <div id="idPersonal" class="tabcontent">
+            <label for="idPersonalInput">Ingrese su identificador personal:</label>
+            <input type="text" id="idPersonalInput" placeholder="Identificador personal">
+            <button id="emitirBoleto">Emitir Boleto</button>
+        </div>
+
+        <div id="resultado" class="tabcontent">
+            <p id="mensajeResultado"></p>
+        </div>
+    </div>
+
+    <script src="../Js/main.js"></script>
+</body>
+</html>
